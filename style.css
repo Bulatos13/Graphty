@@ -9,10 +9,14 @@ body{
 #wrapper{
 	width: 100%;
 	max-width: 430px;
-	margin: 50px auto;
+	margin: 0 auto;
 	background-position: -335px 0; 
 }
 header{
+	position: fixed;
+	z-index: 2;
+	top: 0;
+	left: 0;
 	width: 100%;
 	display: flex;
 	align-items: center;
@@ -36,24 +40,29 @@ header{
 	background: url('img/bell.svg');
 }
 main{
+	position: absolute;
+	top: 70px;
+	left: 0;
 	width: 100%;
 	max-width: 430px;
 	display: flex;
 	justify-content: space-between;
 	background: transparent;
 	padding: 28px;
+	overflow: scroll;
 }
 .main-child{
 }
 #navigation{
+	position: fixed;
 	width: 33px;
 	height: 481px;
 	list-style-type: none;
-	padding-left: 0;
-	left: 0;
+	left: 28px;
 }
 #content{
-	left: 120px;
+	position: absolute;
+	right: 28px;
 }
 .content-child{
 	width: 272px;
